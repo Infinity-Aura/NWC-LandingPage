@@ -14,5 +14,9 @@
   &--contained {
     color: #fff;
     background: $primary-linear-gradient;
+
+    &:hover {
+      background: linear-gradient(102.65deg, #ef3f6e 10%, #f857a6 100%);
+    }
   }
 }
