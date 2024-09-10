@@ -1,0 +1,90 @@
+.footer {
+  grid-area: footer;
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: start;
+  }
+
+  &__main {
+    display: grid;
+    gap: pxToRem(24px);
+  }
+
+  &__logo {
+    .logo__image {
+      width: 134px;
+      height: 26px;
+    }
+  }
+
+  &__copyright {
+    padding-left: 5px;
+    line-height: 1.6;
+  }
+
+  &__contact-info {
+    padding-left: 9px;
+  }
+
+  &__more {
+    padding-left: 15px;
+  }
+
+  &__news-subscribe {
+    max-width: 300px;
+    justify-self: end;
+  }
+}
+
+.contact-info {
+  &__description {
+    margin-top: 19px;
+    color: $secondary-color;
+    font-size: pxToRem(17px);
+    line-height: $line-height-base + 0.1;
+
+    &-contacts {
+      margin-top: 24px;
+    }
+  }
+}
+
+.more {
+  &__list {
+    margin-top: 19px;
+    color: $secondary-color;
+    font-size: pxToRem(17px);
+    line-height: $line-height-base;
+    display: grid;
+    gap: pxToRem(10px);
+  }
+}
+
+.news-subscribe {
+  &__description {
+    margin-top: 19px;
+  }
+
+  &__form {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 220px 1fr;
+  }
+
+  &__input {
+    border: 1px solid rgba(8, 60, 130, 0.07);
+    border-top-left-radius: $border-radius;
+    border-bottom-left-radius: $border-radius;
+    box-shadow: 0px 0px 25px 0px rgba(30, 34, 40, 0.04);
+    padding: 16px 21px;
+  }
+
+  &__button {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    box-shadow: 0px 0px 25px 0px rgba(30, 34, 40, 0.04);
+    padding: 16px 24px;
+  }
+}

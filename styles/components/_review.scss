@@ -1,0 +1,26 @@
+.review {
+  display: grid;
+  gap: pxToRem(20px);
+
+  &__quote {
+    color: $secondary-color;
+    font-size: pxToRem(18px);
+    line-height: pxToRem(31px);
+    font-weight: $font-weight-medium;
+  }
+
+  &__author {
+    font-size: pxToRem(19px);
+    line-height: pxToRem(28px);
+    font-weight: $font-weight-semi-bold;
+
+    &-position {
+      margin-top: 3px;
+      display: block;
+      color: $secondary-color;
+      font-size: pxToRem(17px);
+      line-height: pxToRem(29px);
+      font-weight: $font-weight-medium;
+    }
+  }
+}

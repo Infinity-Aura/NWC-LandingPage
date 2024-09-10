@@ -1,0 +1,23 @@
+.list {
+  display: grid;
+  gap: pxToRem(16px);
+
+  &-item {
+    color: $secondary-color;
+    font-size: pxToRem(17px);
+    line-height: $line-height-base;
+    display: grid;
+    grid-template-columns: 20px 1fr;
+    align-items: center;
+    gap: pxToRem(10px);
+
+    &::before {
+      content: '';
+      display: inline-block;
+      background-color: $light-color;
+      border-radius: 100%;
+      width: 20px;
+      height: 20px;
+    }
+  }
+}

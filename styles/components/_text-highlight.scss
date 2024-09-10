@@ -1,0 +1,6 @@
+.text-highlight {
+  background: $primary-linear-gradient;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

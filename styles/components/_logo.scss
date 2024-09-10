@@ -1,0 +1,15 @@
+.logo {
+  display: flex;
+  align-items: center;
+  gap: pxToRem(5px);
+
+  &__image {
+    width: 19.27px;
+  }
+
+  &__text {
+    font-size: pxToRem(22px);
+    font-weight: $font-weight-semi-bold;
+    color: #000;
+  }
+}

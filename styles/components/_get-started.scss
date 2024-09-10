@@ -1,0 +1,30 @@
+.get-started {
+  display: grid;
+  justify-items: center;
+  border-radius: $border-radius * 2;
+  background-image: url("/assets/images/main-section-background.png");
+  background-position: center;
+  width: 1470px;
+  height: 409px;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__title {
+
+  }
+
+  &__subtitle {
+    margin-top: 17px;
+    text-align: center;
+    max-width: 675px;
+  }
+
+  &__button {
+    margin-top: 36px;
+  }
+}

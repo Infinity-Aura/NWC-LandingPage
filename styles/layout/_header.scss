@@ -1,0 +1,54 @@
+.header {
+  grid-area: header;
+  font-size: pxToRem(17px);
+  line-height: pxToRem(28.9px);
+
+  &__container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto;
+    padding: 0 70px 0 28.5px;
+  }
+
+  &__logo {
+    align-self: start;
+  }
+
+  &__side {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: pxToRem(161.64px);
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+
+    &-list {
+      list-style-type: none;
+      display: flex;
+      justify-content: space-between;
+      gap: pxToRem(22.4px);
+    }
+
+    &-item {
+      font-size: pxToRem(17px);
+      font-weight: $font-weight-semi-bold;
+      color: $primary-color;
+    }
+  }
+
+  &__auth {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: pxToRem(113.6px);
+
+    &-button {
+      display: flex;
+      flex-wrap: nowrap;
+      padding: 0;
+    }
+  }
+}

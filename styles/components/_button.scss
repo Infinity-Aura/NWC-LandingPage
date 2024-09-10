@@ -1,0 +1,18 @@
+.button {
+  font-weight: $font-weight-semi-bold;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: $border-radius;
+  padding: 19px 28px;
+  white-space: nowrap;
+
+  &--text {
+    color: #000;
+    background-color: transparent;
+  }
+
+  &--contained {
+    color: #fff;
+    background: $primary-linear-gradient;
+  }
+}

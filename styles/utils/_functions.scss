@@ -1,0 +1,7 @@
+@use "sass:math";
+
+@import 'variables';
+
+@function pxToRem($value) {
+  @return math.div($value, $font-size-base) * 1rem;
+}

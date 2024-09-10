@@ -1,0 +1,49 @@
+@import '../utils/functions';
+
+h1 {
+  color: $primary-color;
+  font-size: pxToRem(46px);
+  line-height: pxToRem(55px);
+  font-weight: $font-weight-semi-bold;
+  letter-spacing: 0;
+}
+
+h2 {
+  background: $primary-linear-gradient;
+  font-size: pxToRem(16px);
+  font-weight: $font-weight-semi-bold;
+  text-transform: uppercase;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h3 {
+  color: $primary-color;
+  font-size: pxToRem(38px);
+  line-height: pxToRem(47.5px);
+  font-weight: $font-weight-semi-bold;
+}
+
+h4 {
+  color: $primary-color;
+  font-size: pxToRem(20px);
+  line-height: pxToRem(29px);
+  font-weight: $font-weight-semi-bold;
+}
+
+p {
+  color: $secondary-color;
+  font-size: pxToRem(17px);
+  line-height: $line-height-base;
+}
+
+input {
+  &::placeholder {
+    font-family: $font-family;
+    color: #959CA9;
+    font-size: pxToRem(15px);
+    line-height: pxToRem(25px);
+    font-weight: $font-weight-medium;
+  }
+}

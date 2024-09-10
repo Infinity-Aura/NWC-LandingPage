@@ -1,0 +1,13 @@
+{
+  "name": "sp-test-landingpage",
+  "version": "1.0.0",
+  "scripts": {
+    "watch:scss": "sass --watch styles/main.scss styles/styles.css --style=compressed"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "sass": "^1.78.0"
+  }
+}

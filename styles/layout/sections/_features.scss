@@ -1,0 +1,109 @@
+.features {
+  display: grid;
+  justify-items: center;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin-bottom: 305px;
+  }
+
+  &__main {
+    padding-left: 7px;
+  }
+
+  &__subtitle {
+    margin-top: 17px;
+    max-width: 540px;
+  }
+
+  &__description {
+    line-height: pxToRem(28px);
+    margin-top: 20px;
+    max-width: 510px;
+  }
+
+  &__list {
+    margin-top: 39px;
+  }
+  
+  &__statistics {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__image {
+    border-radius: $border-radius;
+    height: 590px;
+    width: 625px;
+  }
+
+  &__clients-statistic {
+    position: absolute;
+    left: -44px;
+    top: 88px;
+    box-shadow: 0px 5px 35px rgba(30, 34, 40, 0.07);
+    background-color: #fff;
+    border-radius: $border-radius;
+    padding: 20px 25px;
+
+    display: flex;
+    gap: pxToRem(15px);
+  
+    &-count {
+      font-size: pxToRem(25px);
+      line-height: pxToRem(35px);
+      font-weight: $font-weight-semi-bold;
+    }
+  
+    &-text {
+      color: $secondary-color;
+      font-size: pxToRem(16px);
+      line-height: pxToRem(24px);
+      font-weight: $font-weight-medium;
+    }
+  }
+
+  &__time-statistic {
+    position: absolute;
+    left: -64px;
+    bottom: 59px;
+    box-shadow: 0px 5px 35px rgba(30, 34, 40, 0.07);
+    background-color: #fff;
+    border-radius: $border-radius;
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &-info {
+      position: relative;
+    }
+  
+    &-percentage {
+      position: absolute;
+      bottom: -7px;
+      left: 50%;
+      transform: translateX(-50%);
+
+      font-size: pxToRem(40px);
+      line-height: pxToRem(40px);
+
+      &-symbol {
+        font-size: pxToRem(20px);
+      }
+    }
+
+    &-text {
+      font-size: pxToRem(20px);
+      font-weight: $font-weight-semi-bold;
+      margin-top: 15px;
+    }
+  }
+}
